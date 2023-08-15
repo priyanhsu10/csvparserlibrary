@@ -1,0 +1,4 @@
+name,age,id,sal
+priyanshu, 32,1,300
+anshu,5,2,400
+priya, 30,3,899
