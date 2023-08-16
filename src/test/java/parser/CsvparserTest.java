@@ -49,6 +49,18 @@ public class CsvparserTest {
 		}
 
 	}
+	@Test
+	public void parseObjectFromUriWithCustomFields() throws IOException {
+		CsvParser parser = new CsvParser(";");
+		String s ="https://support.staffbase.com/hc/en-us/article_attachments/360009197071/email.csv";
+		URI p=URI.create(s);
+		List<CustomUser> users = parser.parse(p, CustomUser.class);
+
+		for (CustomUser user : users) {
+			System.out.println(user);
+		}
+
+	}
 
 
 
