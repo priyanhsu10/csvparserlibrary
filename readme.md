@@ -1,8 +1,30 @@
 # csv Parser java library
  
-## This new library is very flexible and work with file and URI
+### CSV parser library is very flexible . It works with  file path and and URI seamlessly
+
+
+
+
+
+### Separator config
+Custom separator can be provided in constructor
+
+CsvParser parser = new CsvParser(";");
+
+Default separator is ","
+
+### @FieldName(name ="column name form csv" )
+exp :-> @FieldName(name ="First name" )
+
+you can give @fieldname attribute and sometime column name like "first name" include space .
+library handle this case as well  no need ot worry if you column name contain space
+Name matching is case Insensitive
+
+If yo not attributed POJO field with @FieldName then it try to simply match with field name 
+and this also case Insensitive
 
 ```
+
 public class Student {
 	
 	private int id;
@@ -53,7 +75,9 @@ public void parseObject() throws IOException {
 	}
 	
 ```
-## You can load CSV file from Url No need to download the csv file, You just provide the url to the file ,it work just seamlessly
+
+### You can load CSV file from Url No need to download the csv file, You just provide the url to the file ,it work just seamlessly
+
 	
 ```
 	@Test
@@ -76,12 +100,6 @@ public void parseObject() throws IOException {
  you can give @fieldname attribute and sometime column name like "first name" include space . 
  library handle this case as well  no need ot worry if you column name contain space
 
-# Separator config 
- Custom separator can be provided in constructor
-
-CsvParser parser = new CsvParser(";");
-
-### default separator is ","
 
 ```
 public class CustomUser {
