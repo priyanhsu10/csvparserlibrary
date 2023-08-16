@@ -1,9 +1,6 @@
-# csv Parser java library
- 
-### CSV parser library is very flexible . It works with  file path and and URI seamlessly
+# CSV Parser java library
 
-
-
+### CSV parser library is very flexible . It works with  file path and  URI seamlessly
 
 
 ### Separator config
@@ -16,11 +13,14 @@ Default separator is ","
 ### @FieldName(name ="column name form csv" )
 exp :-> @FieldName(name ="First name" )
 
-you can give @fieldname attribute and sometime column name like "first name" include space .
-library handle this case as well  no need ot worry if you column name contain space
-Name matching is case Insensitive
+you can give @Fieldname attribute to fields. 
+sometime column name like "first name" include space .
+Library handle this case . You no need ot worry if you column name contain space
 
-If yo not attributed POJO field with @FieldName then it try to simply match with field name 
+### Name matching is case Insensitive
+
+
+If you not apply @Fieldname attribute to POJO field  then it simply try to match with field name 
 and this also case Insensitive
 
 ```
