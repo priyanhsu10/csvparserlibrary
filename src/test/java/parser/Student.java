@@ -7,7 +7,10 @@ public class Student {
 	private String studentName;
 	@FieldName(name = "age")
 	private int studentAge;
-
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", studentName=" + studentName + ", studentAge=" + studentAge + "]";
+	}
 	public int getAge() {
 		return studentAge;
 	}
@@ -24,12 +27,6 @@ public class Student {
 		this.studentName = name;
 	}
 
-
-
-	@Override
-	public String toString() {
-		return "Student [id=" + id + ", studentName=" + studentName + ", studentAge=" + studentAge + "]";
-	}
 
 	public int getId() {
 		return id;
