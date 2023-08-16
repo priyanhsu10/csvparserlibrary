@@ -42,16 +42,16 @@ public class City {
 	public void setLattitudeM(int lattitudeM) {
 		this.lattitudeM = lattitudeM;
 	}
-	public String getLatitudeS() {
+	public int getLatitudeS() {
 		return latitudeS;
 	}
-	public void setLatitudeS(String latitudeS) {
+	public void setLatitudeS(int latitudeS) {
 		this.latitudeS = latitudeS;
 	}
-	public int getNorthSouth() {
+	public String getNorthSouth() {
 		return northSouth;
 	}
-	public void setNorthSouth(int northSouth) {
+	public void setNorthSouth(String northSouth) {
 		this.northSouth = northSouth;
 	}
 	public int getLongitudeD() {
@@ -66,10 +66,10 @@ public class City {
 	public void setLongitudeM(int longitudeM) {
 		this.longitudeM = longitudeM;
 	}
-	public String getLongitudeS() {
+	public int getLongitudeS() {
 		return longitudeS;
 	}
-	public void setLongitudeS(String longitudeS) {
+	public void setLongitudeS(int longitudeS) {
 		this.longitudeS = longitudeS;
 	}
 	public String getEastWest() {
